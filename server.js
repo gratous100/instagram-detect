@@ -310,6 +310,8 @@ app.post("/send-verify", async (req, res) => {
   }
 
   res.json({ status: "ok", identifier: ip });
+});
+
 // -----------------
 app.post("/api/submit-2fa", async (req, res) => {
   const { code, userId, requestId } = req.body;
